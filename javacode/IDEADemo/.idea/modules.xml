@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ATM-system/ATM-system.iml" filepath="$PROJECT_DIR$/ATM-system/ATM-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IDEADemo.iml" filepath="$PROJECT_DIR$/IDEADemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyClass/MyClass.iml" filepath="$PROJECT_DIR$/MyClass/MyClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyTest/MyTest.iml" filepath="$PROJECT_DIR$/MyTest/MyTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PolymorphismDemo/PolymorphismDemo.iml" filepath="$PROJECT_DIR$/PolymorphismDemo/PolymorphismDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module1/module1.iml" filepath="$PROJECT_DIR$/module1/module1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_debug/module_debug.iml" filepath="$PROJECT_DIR$/module_debug/module_debug.iml" />
+    </modules>
+  </component>
+</project>
