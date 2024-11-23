@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    var jsonstr = '{"name":"Tom", "age":18, "addr":["北京", "上海"]}'
+    // json转为js对象
+    var object = JSON.parse(jsonstr);
+    alert(object.age)
+
+
+    obj = {
+        name : "Tom",
+        age:11,
+        eat(){
+            alert("eat function");
+        }
+    }
+    // js对象转为JSON字符串
+    alert(JSON.stringify(obj))
+
+    var flag = confirm("确认选择？");
+    alert(flag);
+
+
+    var cnt = 0;
+
+    setInterval(function(){
+        console.log(cnt);
+        cnt++;
+    })
+
+    // bom讲解，浏览器对象模型
+    alert(location.href)
+    location.href = "https://www.baidu.com"
+
+    // dom，定义HTML和XML，改变html元素内容
+
+
+</script>
+
+</html>

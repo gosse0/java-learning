@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM演示</title>
+</head>
+
+<body>
+    <img src="news_logo.png" id="x111"> <br><br>
+    <div class="cls">你好啊</div><br>
+    <div class="cls">第二段</div><br>
+
+    <label><input type="checkbox" name="hobby">电影</label>
+    <input type="checkbox" name="hobby">旅游
+    <input type="checkbox" name="hobby">游戏
+
+    <!-- 按钮 -->
+    <br>
+    <input type="button" value="全选" onclick="selectAll()">
+    <input type="button" value="全不选" onclick="unSelect()">
+    <br>
+
+    <input type="button" value="按钮一" id="bt1" onclick="on()">
+    <input type="button" value="按钮二" id="bt2">
+</body>
+
+<script>
+    //获取元素
+    //根据id
+    // var img = document.getElementById("x111");
+    // alert(img);
+
+    //根据标签<tag>
+    // var divs=document.getElementsByTagName('div');
+    // alert(divs)
+    // for (let i = 0; i < divs.length; i++) {
+    //     alert(divs[i]);
+    // }
+
+    //根据名字name
+    // var hobbys = document.getElementsByName('hobby');
+    // for (let i = 0; i < hobbys.length; i++) {
+    //     alert(hobbys[i])
+    // }
+
+    //根据class
+    // var divs = document.getElementsByClassName('cls');
+    // for (let i = 0; i < divs.length; i++) {
+    //     alert(divs[i]);
+    // }
+
+    //修改文本
+    var divs = document.getElementsByClassName('cls');
+    var div1 = divs[1];
+    //修改文本div
+    div1.innerHTML += "<font color='red'>修改</font>";
+    //修改图片img
+    var img = document.getElementById('x111');
+    img.src = "../html/img/huawei.jpg";
+    //修改选中
+    var box = document.getElementsByName("hobby");
+    for (let i = 0; i < box.length; i++) {
+        const check = box[i];
+        check.checked = true;
+    }
+
+    //按钮
+
+    function on(){
+        alert("按钮一被点了");
+    }
+
+    document.getElementById("bt2").onclick=function(){
+        alert("按钮二被点了")
+        var img = document.getElementById('x111');
+        img.src = "news_logo.png";
+    }
+
+    function selectAll(){
+        var boxes = document.getElementsByName("hobby");
+        for (let i = 0; i < boxes.length; i++) {
+            const box = boxes[i];
+            box.checked = true;
+        }
+    }
+    function unSelect(){
+        boxes = document.getElementsByName("hobby");
+        for (let i = 0; i < boxes.length; i++) {
+            const box = boxes[i];
+            box.checked = false;
+        }
+    }
+
+
+</script>
+
+</html>

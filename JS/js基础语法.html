@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基础语法</title>
+</head>
+
+<body>
+    <script>
+        //警告框
+        //window.alert("hello");
+        //写入html中
+        document.write("111");
+        //控制台输出
+        console.log("console");
+
+        {
+            var x = 1;//全局变量，可重复定义
+        }
+        x = "adfas";
+        //window.alert(x);
+
+        {
+            let y = 1;//局部变量
+            //let y = 2;
+        }
+        
+
+    </script>
+</body>
+<script>
+    //函数的定义1
+    function add(a,b){
+        return a+b;
+    }
+    //函数的定义2
+    var add2 = function(a,b){
+        return a+b;
+    }
+    var result = add2(1,2);
+
+    //数组
+    var arr = new Array(1,2,3,4,5);
+    var arr2 = [1,2,85,5,4556];
+    arr2[100] = 4;
+
+    document.write(arr2);
+    /*for (let i = 0; i < arr2.length; i++) {
+        const x = arr2[i];
+        console.log(x);
+    }*/
+
+    arr.forEach(function(e){
+        console.log(e);
+    })
+
+    var user = {
+        name : "111",
+        age : 10,
+        eat : function(){// eat()
+            alert("用户类的吃饭");
+        }
+    }
+
+    console.log(user.name);
+    user.eat();
+    
+
+
+
+
+</script>
+
+</html>

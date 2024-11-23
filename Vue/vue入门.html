@@ -1,0 +1,44 @@
+<head>
+    <title>vue快速入门</title>
+    <script src="js/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model="message">
+        {{message}}
+        <br>
+        <a v-bind:href="url">超链接</a>   <br>
+        <input type="text" v-model="url">  <br>
+        <input type="button" v-on:click="handle" value="按钮">
+
+        <input type="text" v-model="age">
+        <span v-if="age<=30">年轻人</span>
+        <span v-else-if="age<=60">中年人</span>
+        <span v-else>老年人</span>
+        <br>
+
+        <span v-for="(addr, index) in address">{{index}}:{{addr}} <br> </span>
+
+
+
+
+    </div>
+</body>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            message: "hello world",
+            url: "https://www.baidu.com",
+            age:18,
+            address:["北京","上海","无锡"]
+        },
+        methods: {
+            handle: function () { alert("点击"); }
+        },
+    })
+
+</script>
+
+</html>
