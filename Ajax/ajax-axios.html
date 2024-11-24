@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>axios基本使用</title>
+    <script src="js/axios-0.18.0.js"></script>
+</head>
+<body>
+    <input type="button" value="get请求" onclick="get()">
+    <input type="button" value="post请求" onclick="post()">
+</body>
+
+<script>
+    function get(){
+        axios({
+            method:"get",
+            url:"https://jsonplaceholder.typicode.com/posts/1"
+        }).then(result => {
+            console.log(result);
+        })
+    }
+/* 
+    function post(){
+        axios({
+            method:"post",
+            url:"https://jsonplaceholder.typicode.com/posts",
+            data:"userId=1"
+        }).then(result => {
+            console.log(result);
+        })
+    }
+     */
+
+    //简化版
+    function post(){
+        axios.post("https://jsonplaceholder.typicode.com/posts","userId=1").then(result=>{
+            console.log(result);
+        })
+    }
+
+
+
+</script>
+</html>
